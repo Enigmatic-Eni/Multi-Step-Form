@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet" />
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="form">
+        <div class="form-container"> 
+            <!-- Sidebar -->
+            <div class="form-sidebar">
+                <div class="step-active">
+                    <div class="circle">1</div>
+                    <div class="step-content">
+                        <span>Step 1</span>
+                        <b>YOUR INFO</b>
+                    </div>
+                </div>
+                <div class="step-active">
+                    <div class="circle">2</div>
+                    <div class="step-content">
+                        <span>Step 2</span>
+                        <b>SELECT PLAN</b>
+                    </div>
+                </div>
+                <div class="step-active">
+                    <div class="circle">3</div>
+                    <div class="step-content">
+                        <span>Step 3</span>
+                        <b>ADD-ONS</b>
+                    </div>
+                </div>
+                <div class="step-active">
+                    <div class="circle">4</div>
+                    <div class="step-content">
+                        <span>Step 4</span>
+                        <b>SUMMARY</b>
+                    </div>
+                </div>
+                </div>
+                
+<!-- Step 1 -->
+<div class="stp step-1">
+    <div class="header">
+        <h1>Personal Info</h1>
+                            <p>Please provide your name, email address, and phone number.</p>
+    </div>
+    <form action="">
+        <div class="label">
+            <label for="name">Name</label>
+            <p class="error">This is a required field</p>
+        </div>
+        <input type="text" required id="name" placeholder="e.g. Stephen King">
+
+        <div class="label">
+            <label for="email">Email Address</label>
+            <p class="error">This is a required field</p>
+        </div>
+        <input type="text" required id="email" placeholder="e.g. stephenking@lorem.com">
+        <div class="label">
+            <label for="phone">Phone Number</label>
+            <p class="error">This is a required field</p>
+        </div>
+        <input type="tel" required id="phone" placeholder="e.g. +234 000 0000">
+    </form>
+    <div class="btn">
+<button class="next-step" type="submit">Next Step</button>
+    </div>
+</div>
+
+           <!-- Step 2 -->
+           <div class="step-2">
+            <div class="header">
+                <h1>Select your plan</h1>
+                <p>You have the option of the monthly or yearly billing</p>
+            </div>
+            <form action="">
+                <div class="plan-card selected">
+                    <img src="./images/icon-arcade.svg" alt="">
+                    <div class="plan-info chosen">
+                        <b>Arcade</b>
+                        <span class="plan-priced">
+                            $9/mo
+                        </span>
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <img src="./images/icon-advanced.svg" alt="">
+                    <div class="plan-info">
+                        <b>Advanecd</b>
+                        <span class="plan-priced">
+                            $12/mo
+                        </span>
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <img src="./images/icon-pro.svg" alt="">
+                    <div class="plan-info">
+                        <b>Pro</b>
+                        <span class="plan-priced">
+                            $15/mo
+                        </span>
+                    </div>
+                </div>
+            </form>
+            <div class="switched">
+                <p class="monthly sw-active">Monthly</p>
+                    <label for="" class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <p class="yearly">Yearly</p>
+                </div>
+                <div class="btns">
+                    <button class="prev-step" type="button">Go Back</button>
+                    <button class="next-step" type="submit">Next Step</button>
+                </div>
+            
+           </div>
+        </div>
+    </div>
+</body>
+</html>
